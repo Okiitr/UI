@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <head>
     <title>This is the first page</title>
+    <style>
+        body {
+              background-color: cadetblue;
+ 
+             }
+        div,section,footer{
+             background-color: rgb(224, 213, 46);
+             width: 300px;
+             border: 10px solid green;
+             padding: 50px;
+             margin: 20px;  
+             align-self: center;
+              }  
+        a:link, a:visited {
+                    background-color: #fbf3fc;
+                    color: rgb(8, 8, 8);
+                    border: 2px solid green;
+                    padding: 14px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                 }
+
+        a:hover, a:active {
+                    background-color: rgb(56, 212, 56);
+                    color: white;
+                    }   
+
+        table, td, th {
+                    border: 1px solid black;
+                    }
+
+        table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    }
+
+        td {
+                    text-align: center;
+                    }
+        tr:hover {background-color: coral;}
+           
+    </style>
 
 </head>
 <body>
     <header>
         <div>
+            <a href="https://youtube.com" target="_blank">You Tube</a>
             <p>this is paragraph</p>
             <hr>
             <a href="https://youtube.com" target="_blank" >youtube</a>
@@ -16,6 +60,7 @@
     <section>
         <title>the article</title>
         <article>this the article</article>
+<<<<<<< HEAD
     </section>
     <table border=1 align="center">
         <th>name</th>
@@ -31,5 +76,25 @@
     </table>
 
     <footer background-color:"red">this is the footer </footer>
+=======
+    </section> 
+    
+    <div style="overflow-x: auto;">    <!-- making table responsive -->
+        <table>
+            <th>name</th>
+            <th>country</th>
+            <tr>
+                <td>suresh</td>
+                <td>india</td>
+            </tr>
+            <tr>
+                <td>oman</td>
+                <td>india</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer style="width:80% ;">this is the footer </footer>
+>>>>>>> 1e1424e3e50a0f2d41d870590149984b68d5f2fa
 
 </body>
