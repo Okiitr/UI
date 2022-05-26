@@ -13,6 +13,7 @@
             background-position: top center;
             background-color: black;
             color: aliceblue;
+            align-items: center;
         }
         h1{
             color: aliceblue;
@@ -27,6 +28,46 @@
             font-size: 16px;
             /* font-family: Arial, Helvetica, sans-serif; */
           }
+        div{
+
+            background-color: rgb(252, 252, 252);
+            color: rgb(33, 7, 7);
+            position: relative;
+            left:40%;
+            margin-top: 40px;
+            width: 350px;
+            height: 350px;
+            text-align: center;
+         }
+         #lang{
+            position: relative;
+            left:39%;
+            margin-top: 5px;
+            box-sizing: border-box;
+
+         }
+         footer{
+             margin-top: 30px;
+         }
+         input[type=submit]{
+                background-color: #40c4dc;
+                width: 280px;
+                border: none;
+                color: white;
+                padding: 4px 4px;
+                text-decoration: none;
+                margin: 20px 2px;
+                cursor: pointer;
+                }
+         input[type=text], input[type=password] {
+            
+                width: 280px;
+                
+                color: rgb(32, 25, 25);
+                padding: 4px 4px;
+                /* margin: 20px 2px; */
+                cursor: pointer;
+                }
         
     </style>
 </head>
@@ -39,6 +80,23 @@
                             message about your application that may be relevant for users
             </p>
     </header>
+    <div align="center" class="container">
+        <select  id="lang">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+    
+          </select>
+        <h2 color="black">Log In to Your Account</h2>
+        <form action="home.html" method="get" autocomplete="on">
+            <input type="text" id="fname" placeholder="email or phone or username"><br><br>
+            <input type="password" id="fname" placeholder="password"><br>
+
+            <input type="checkbox" id="logedin" name="gender" value="female">
+            <label for="logedin">Keep me logged in for 30 days</label><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
 
 
    <footer align="center">Terms of Use .Help .Privacy</footer>
