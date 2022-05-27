@@ -16,6 +16,9 @@
             padding: 0;
             overflow: hidden;
             background-color: #333;
+            position: fixed;
+            z-index: 1;
+            width: 93vw;
             }
        li {
             float: left;
@@ -39,20 +42,42 @@
        .red{
            display: inline-block;
            background: red;
-           width: 45%;
-           height: 400px;
-           margin:20px;
+           width: 45vw;
+           height: 90vh;
+           margin-top: 80px;
+           margin-left: 40px;
            overflow: hidden;
+            
        }
        .blue{
            display: inline-block;
            background:rgb(74, 74, 226);
-           width: 45%;
-           height: 400px;
-           margin: 20px;
+           width: 45vw;
+           height: 90vh;
+           margin-top: 80px;
+           margin-left: 20px;
            overflow: hidden;
 
        }
+       .box1{ 
+           position: relative;
+           background-color: chartreuse;
+           width: 36%;
+            height: 40%;
+            top: 23%;
+            left: 28%;
+            text-align: center;
+                }
+       .box2{ 
+           position: sticky;
+           background-color: rgb(235, 29, 132);
+           width: 30%;
+            height: 29%;
+            left: 30%;
+            top: 20%;
+            overflow: auto;
+
+                }
        footer{
            background-color: #04AA6D;
           
@@ -72,9 +97,17 @@
           
         <div class="blue">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.
+
+            <div class="box1">Lorem ipsum dolor sit amet </div>
         </div>
         <div class="red">
+            
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, nostrum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, numquam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eos ipsum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, corporis..</div>
         </div>
     <footer>
         Lorem, ipsum dolor.
