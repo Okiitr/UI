@@ -1,19 +1,31 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>This is the first page</title>
+
+<!-- google font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
     <style>
         body {
-              background-color: cadetblue;
+              background-color: rgb(136, 208, 211);
+              font-family: 'Roboto Condensed', sans-serif;
  
              }
         div,section,footer{
              background-color: rgb(224, 213, 46);
              width: 300px;
+             height: 150px;
              border: 10px solid green;
              padding: 50px;
              margin: 20px;  
-             align-self: center;
+             position: relative center
+        
               }  
+
+        
         a:link, a:visited {
                     background-color: #fbf3fc;
                     color: rgb(8, 8, 8);
@@ -46,33 +58,20 @@
     </style>
 
 </head>
-<body>
+<body >
     <header>
-        <div>
+        <div align="center" style = "position:relative; left:50%;" >
             <a href="https://youtube.com" target="_blank">You Tube</a>
             <p>this is paragraph</p>
-            <hr>
-            <a href="https://youtube.com" target="_blank" >youtube</a>
 
         </div>
     </header>
     
-    <section>
+    <section align="center">
+
         <title>the article</title>
         <article>this the article</article>
     </section>
-    <table border=1 align="center">
-        <th>name</th>
-        <th>country</th>
-        <tr>
-            <td>suresh</td>
-            <td>india</td>
-        </tr>
-        <tr>
-            <td>oman</td>
-            <td>india</td>
-        </tr>
-    </table>
 
     <footer background-color:"red">this is the footer </footer>
     </section> 
@@ -95,3 +94,4 @@
     <footer style="width:80% ;">this is the footer </footer>
 
 </body>
+</html>

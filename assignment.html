@@ -1,45 +1,108 @@
 <!DOCTYPE html>
-<head>
+<html><head>
     <title>
         Login to Dremio
     </title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body  {
-           background-color: black;
-           /* background-image:url('background_image.jpeg'); */
-           background-repeat: no-repeat;
-           background-position: center;
-           margin: 100px;
-           color: aliceblue;
-           align-items: center;
-        
-        }
-        header{
+            background-image: url('background_image.jpeg');
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: top center;
+            background-color: black;
             color: aliceblue;
             align-items: center;
         }
-        img { 
-                width: 100%;
-                height: 50%;
-                opacity: 0.9;
+        h1{
+            color: aliceblue;
+            /* align-self: center; */
+            margin-top: 60px;
+            font-size: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            color: aliceblue;
+            align-self: center;
+            font-size: 16px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+          }
+        div{
+
+            background-color: rgb(252, 252, 252);
+            color: rgb(33, 7, 7);
+            position: relative;
+            left:40%;
+            margin-top: 40px;
+            width: 350px;
+            height: 350px;
+            text-align: center;
+         }
+         /* #lang{
+            position: relative;
+            left:39%;
+            margin-top: 5px;
+            box-sizing: border-box; */
+
+         }
+         footer{
+             margin-top: 30px;
+         }
+         input[type=submit]{
+                background-color: #40c4dc;
+                width: 280px;
+                border: none;
+                color: white;
+                padding: 4px 4px;
+                text-decoration: none;
+                margin: 20px 2px;
+                cursor: pointer;
                 }
-                .container {
-                    position: relative;
-                    }
+         input[type=text], input[type=password] {
+            
+                width: 280px;
+                
+                color: rgb(32, 25, 25);
+                padding: 4px 4px;
+                /* margin: 20px 2px; */
+                cursor: pointer;
+                }
+        select{
+                text-align:;
+            }
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            PATTERNFLY
-        </h1>
+    <header >
+            <h1 align="center">
+                P A T T E R N F L Y
+            </h1>
+            <p align="center">This is placeholder text,only. Use this area to place any information or introductory <br>
+                            message about your application that may be relevant for users
+            </p>
     </header>
-    <div class="container">
-        <img src="background_image.jpeg" alt="Cinque Terre" width="100%" height="50%">
-        <div class="center">Centered</div>
-      </div>
+    <div align="center" class="container">
+        <select  id="lang" >
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+    
+          </select>
+        <h2 color="black">Log In to Your Account</h2>
+        <form action="home.html" method="get" autocomplete="on">
+            <input type="text" id="fname" placeholder="email or phone or username"><br><br>
+            <input type="password" id="fname" placeholder="password"><br>
 
-   <footer>Terms of Use .Help .Privacy</footer>
+            <input type="checkbox" id="logedin" name="gender" value="female">
+            <label for="logedin">Keep me logged in for 30 days</label><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+
+   <footer align="center">Terms of Use .Help .Privacy</footer>
 </body>
+</html>
