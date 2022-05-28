@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            display: flex;
+            background: black;
+            color: antiquewhite;
+        }
+        .navbar{
+            /* flex-grow: 1; */
+            margin: 10px;
+            color: black;
+            background-color: aqua;
+            height: 80%;
+            font-size: 1rem;
+             padding: 10px;
+        }
+      
+        .img{
+            border:2px solid black;
+            width: 90vw;
+            height: 40vh;
+            overflow: hidden;
+            margin: auto;
+        }
+        img{
+            min-width: 90vw;
+            height: fit-content;
+        }
+        .container{
+            border:2px solid black;
+            justify-content: center;
+            background-color: aqua;
+            width: 90vw;
+            height: 40vh;
+            display: flex;
+            margin: auto;
+        }
+        .box1{
+            border:2px solid black;
+            background-color: blue;
+            width: 40vw;
+            height: 20vh;
+        }
+        .box2{
+            border:2px solid black;
+            background-color: rgb(203, 126, 17);
+            width: 40vw;
+            height: 20vh;
+        }
+        footer{
+            border:2px solid black;
+            background-color: chartreuse;
+            width: 40vw;
+            height: 20vh;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+       
+            <div class="navbar">Home</div>
+            <div class="navbar">News</div>
+            <div class="navbar">About</div>
+            <div class="navbar">Contact</div>
+        
+    </div>
+    <div class="img">
+        <img src="background_image.jpeg" alt="background-image">
+    </div>
+    <div class="container">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, incidunt omnis?</div>
+    </div>
+    <footer>Lorem ipsum dolor sit.</footer>
+    
+</body>
+</html>
