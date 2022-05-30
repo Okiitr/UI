@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{margin: 0;
+        padding: 0;}
+
+        .container{
+            display: grid;
+            /* setting extra columns */
+            grid-template-columns: auto auto ;
+            grid-row-gap: 8px;
+            grid-column-gap: 7px;
+            background-color: #5f9ea0;
+            height: auto;
+            /* setting height of rows  */
+            grid-template-rows: 40px 400px 400px;
+        
+
+        }
+        .item1{
+           /* making one column using 3 space */
+            grid-column: 1/span3;    
+            
+        }
+        .item{
+            border:2px solid blueviolet;
+            background-color: chartreuse;
+            height: auto;
+            
+            
+        }
+        .item1{background-color: rgb(203, 28, 28);
+           color:white;
+           padding: 4px;
+           height: 30px;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            margin:2px
+        }
+
+        @media  screen and (max-width:800px) {
+            body{
+                background-color: darkmagenta;
+            }
+            .item{
+            border:2px solid rgb(177, 177, 38);
+            background-color: rgb(221, 121, 28);
+            height: auto;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <nav>
+        
+                    <ul>
+                        <li><a class="active" >Home</a></li>
+                        <li><a >News</a></li>
+                        <li><a >Contact</a></li>
+                        <li><a >About</a></li>
+                    </ul>
+            
+            </nav>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>
