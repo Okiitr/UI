@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/icon.svg">
     <style>
         body  {
             background-image: url('background_image.jpeg');
@@ -18,18 +19,20 @@
         }
         h1{
             color: aliceblue;
-            /* align-self: center; */
             margin-top: 60px;
-            font-size: auto;
+            font-size: 150%;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .icon{
+          
+            width:2%;
         }
         p {
             color: aliceblue;
-            align-self: center;
-            font-size: 16px;
+            font-size: 80%;
             /* font-family: Arial, Helvetica, sans-serif; */
           }
-        div{
+        .container{
 
             background-color: rgb(252, 252, 252);
             color: rgb(33, 7, 7);
@@ -41,16 +44,28 @@
             width: 22vw;
             height: 50vh;
             text-align: center;
+            overflow: scroll;
          }
+
+         @media screen and (max-width: 800px) {
+                .container{
+                width: 30%;
+                height: 40%;
+                
+                }
+                .icon{
+                    width: 5%;
+                }
+            }
          /* #lang{
             position: relative;
             left:39%;
             margin-top: 5px;
             box-sizing: border-box; */
 
-         }
          footer{
              margin-top: 30px;
+             text-align:center;
          }
          input[type=submit]{
                 background-color: #40c4dc;
@@ -70,7 +85,15 @@
                 padding: 4px 4px;
                 /* margin: 20px 2px; */
                 cursor: pointer;
+                margin-bottom: 3%;
                 }
+        .signin{
+            margin-top: 6%;
+            text-align: center;
+            color: #000000b8;
+            font-size: small;
+        }
+    
         select{
                 position: relative;
                 left: 38%;
@@ -83,6 +106,7 @@
 <body>
     <header >
             <h1 align="center">
+                <img class="icon" src="/icon.svg" alt="icon" >
                 P A T T E R N F L Y
             </h1>
             <p align="center">This is placeholder text,only. Use this area to place any information or introductory <br>
@@ -90,24 +114,28 @@
             </p>
     </header>
     <div align="center" class="container">
+
         <select  id="lang" >
             <option value="English">English</option>
             <option value="Hindi">Hindi</option>
-    
-          </select>
+        </select>
+
         <h2 color="black">Log In to Your Account</h2>
+
         <form action="home.html" method="get" autocomplete="on">
+
             <input type="text" id="fname" placeholder="email or phone or username"><br><br>
             <input type="password" id="fname" placeholder="password"><br>
 
             <input type="checkbox" id="logedin" name="gender" value="female">
-            <label for="logedin">Keep me logged in for 30 days</label><br>
+            <label for="logedin" style="font-size:63%">Keep me logged in for 30 days     <a href="/assignment.html">forgot password</a></label><br>
             
             <input type="submit" value="Login">
+            <p class="signin">Need an account? <a href="/assignment.html">Sign up</a></p>
         </form>
     </div>
 
 
-   <footer align="center">Terms of Use .Help .Privacy</footer>
+   <footer >Terms of Use .Help .Privacy</footer>
 </body>
 </html>
