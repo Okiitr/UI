@@ -71,3 +71,14 @@ console.log(cars)
 console.log(cars.concat(bus))  // doesn't change the array
 console.log(cars)
 */
+
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
+
+let a= window;
+a=window.alert(denger)
+a=innerHeight
+console.log(a)
