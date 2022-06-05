@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit fat</title>
+    <!-- for baloo bhai fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="style.css">
+    <style>
+        /* css reset */
+        body{
+            margin: 0;
+            padding: 0;
+            background: url('/project1/img/bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: wheat;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        .left{
+            /* border:2px solid red; */
+            display: inline-block;
+            position: absolute;   /* position is absolute to the header */
+            top:20px;
+            left: 60px;
+            
+
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);  /* to change color of image black to white*/
+
+        }
+        .left div{
+            text-align: center;
+            font-size: 25px;
+            line-height: 10px;
+        }
+
+        .center{
+            display: block;          /* for nav use this and set some width */
+            /* border: 2px solid green; */
+            width: 60%;
+            margin: 20px auto;
+            overflow: hidden;
+
+
+        }
+        .navbar{
+            display: inline-block;
+            position:sticky;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 22px;
+
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+
+        }
+        .navbar li a:active{
+            color: rgb(107, 224, 81);
+            text-decoration: none;
+            padding: 6px 12px;
+
+        }
+        .navbar li a:hover{
+            color: rgb(21, 18, 35);
+            background-color: rgb(62, 216, 247);
+            text-decoration: none;
+            padding: 6px 12px;
+
+        }
+        .right{
+            position: absolute;
+            /* border: 2px solid yellow; */
+            top:20px;
+            right: 20px;
+
+        }
+        .btn{
+            border: 2px solid gray ;
+            background-color: black;
+            border-radius: 12px;
+            font-size: 20px;
+            margin: 9px 9px;
+            padding:6px 15px;
+            color: aliceblue;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(53, 189, 216);
+        }
+       .container{
+            border: 2px solid white;
+            margin: 110px 504px;
+            padding: 54px 8px;
+            width: 25%;
+            border-radius: 20px;
+
+       }
+       .form-group input{
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            display: block;
+            width: 75%;
+            padding: 2px;
+            margin: 12px auto;
+            font-size: 20px;
+            border: 2px solid rgba(63, 11, 250, 0.74);
+            border-radius: 10px;
+
+       }
+       .container h1{
+           text-align: center;
+           color: #09cdcdcc;
+       }
+       .form-group button{
+           display: block;
+           margin: auto;
+           width: 25%;
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="/project1/img/logo.png" alt="logo">
+            <div class="desc">FIT FAT</div>
+        </div>
+
+        <!-- for nav bar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="/project1/index.html">Home</a></li>
+                <li><a href="">Fitness Centers</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+         <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container" aria-autocomplete="on">
+        <h1>Join The Gym Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
