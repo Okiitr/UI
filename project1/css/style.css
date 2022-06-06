@@ -83,6 +83,11 @@ body{
     cursor: pointer;
     font-family: 'Baloo Bhai 2', cursive;
 }
+.btn i{
+    position: relative;
+    top: 5px;
+    left: -4px;
+}
 .btn:hover{
     background-color: rgb(53, 189, 216);
 }
