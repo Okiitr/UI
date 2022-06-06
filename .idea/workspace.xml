@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893a1008-7b31-41d6-af82-ddb490ac6ee6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Website1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Website1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-script/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-script/simple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project1/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +18,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
