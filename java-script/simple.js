@@ -1,8 +1,8 @@
-console.time('time taken')
-console.log('hey oman this is java script');
-console.log(34*4);
-console.table({oman:'name' , marks:34});
-console.timeEnd('time taken')
+// console.time('time taken')
+// console.log('hey oman this is java script');
+// console.log(34*4);
+// console.table({oman:'name' , marks:34});
+// console.timeEnd('time taken')
 
 // variables in js
 // var let const
@@ -73,12 +73,37 @@ console.log(cars)
 */
 
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
     
-}
+// }
 
-let a= window;
-a=window.alert(denger)
-a=innerHeight
-console.log(a)
+// let a= window;
+// a=window.alert(denger)
+// a=innerHeight
+// console.log(a)
+
+// events
+
+let element=document.getElementById('btn');
+console.log(element)
+
+element.addEventListener("click",function(e){
+    alert('submitted successfully!');
+    document.getElementById("box").style.visibility='visible';
+});
+
+let x=document.getElementById("box")
+.addEventListener("mouseover", function (e){
+    let vari;
+    vari=e.target
+    console.log(vari)
+    document.getElementById("box").style.visibility='hidden';
+});
+
+document.getElementById('body').addEventListener("mousemove",changeColor);
+
+function changeColor(e){
+    console.log(e.offsetX,e.offsetY)
+    document.body.style.backgroundColor=`rgb(${e.offsetX}, ${e.offsetx}, ${e.offsetX},)`;
+}
