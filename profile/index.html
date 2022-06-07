@@ -5,190 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Profile</title>
+    <link rel="stylesheet" href="/profile/css/style.css">
+
+     <!-- for baloo bhai fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
     
     
     <!-- icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <style>
-
-
-        body{
-            margin: 0;
-            padding: 0;
-            background: url('/profile/img/bg.jpg');
-            background-repeat: repeat-y;
-            background-size: cover;
-            color: wheat;
-        }
-        .left{
-            display: inline-block;
-            border: 2px solid green;
-            overflow: scroll;
-            width: 8%;
-            height: 100%;
-            position: absolute;
-            left: 2px;
-            padding: 2px;
-        }
-        .dp{
-            display: block;
-            /* overflow: hidden; */
-            border: 2px solid rgb(175, 49, 148);
-            width: 80%;
-            height:fit-content;
-            margin: auto;
-            margin-bottom: 50%;
-        }
-        .nav{
-            display: block;
-            /* overflow: hidden; */
-            border: 2px solid rgb(175, 49, 148);
-            width: 80%;
-            height:fit-content;
-            margin: auto;
-            margin-bottom: 20%;
-        }
-        .nav:hover {
-                    filter: invert(70%);
-                    color:rgba(91, 94, 88, 0.199) ;
-        
-        }
-        .dp img{
-            width: 100%;
-
-        }
-        .material-symbols-rounded{
-                font-size: 70px;
-                text-align: center;
-                margin-left: 13px
-        }
-        .icons{
-            width: 100%;
-            filter: invert(100%);
-        }
-        .nav a{
-            color: white;
-            text-decoration: none;
-            padding: 6px 12px;
-
-        }
-        .nav a:active{
-            color: rgb(107, 224, 81);
-            text-decoration: none;
-            padding: 6px 12px;
-
-        }
-        .desc {
-            color: aliceblue;
-            text-align: center;
-            font-size: 120%;
-        }
-        /* .home {
-            display: block;
-            position: relative;
-            border: 2px solid rgb(57, 24, 201);
-            width: 82%;
-            height: 13%;
-            margin: 6px;
-        }
-        .about{
-            display: block;
-            position: relative;
-            border: 2px solid rgb(131, 175, 49);
-            width: 82%;
-            height: 13%;
-            margin: 6px;
-        }
-        .contact{
-            display: block;
-            position: relative;
-            border: 2px solid rgb(175, 49, 148);
-            width: 82%;
-            height: 13%;
-            margin: 6px;
-        } */
-        .main{
-            display: block;
-            float: right;
-            width: 90%;
-            height: 110vh;
-            margin:0px;
-            border: 2px solid rgb(27, 55, 78);
-            overflow: scroll;
-
-        }
-        #home  {
-            /* background-image: url('/profile/img/home_pic.jpg');
-            background-repeat: no-repeat;
-            background-size: cover; */
-            border: 2px solid rgb(27, 55, 78);
-            height: 100%;
-            width: 100%;
-            margin-top: 0px;
-            color: beige;
     
-        }
-        .profile{
-            border: 2px solid rgb(27, 55, 78);
-            border-radius: 50%;
-            display: block;
-            height: 60%;
-            width: 30%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #about {
-            /* background-image: url('/profile/img/home_pic.jpg'); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 2px solid rgb(27, 55, 78);
-            height: 170%;
-            width: 100%;
-            margin-top: 20px;
-         
-    
-        }
-        #contact {
-            /* background-image: url('/profile/img/home_pic.jpg'); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 2px solid rgb(27, 55, 78);
-            height: 125%;
-            width: 100%;
-            margin-top: 20px;
-    
-        }
-        footer{
-            border: 2px solid rgb(27, 55, 78);
-            height: 50%;
-            width: 100%;
-            margin-top: 20px;
-    
-        }
-        .heading{
-            font-size: 2rem;
-            text-align: center;
-            color: rgb(202, 192, 192);
-           
-        }
-
-    </style>
 </head>
 <body>
     <div class="left">
         <div class="dp">
-            <img src="/profile/img/user.png" alt="profile photo">
+            <a href="#home"><img src="/profile/img/user.png" alt="profile photo"></a> 
         </div>
         <div class="nav">
-            <img class="icons" src="/profile/img/home.png" alt="home">
+            <a href="#home"><img class="icons" src="/profile/img/home.png" alt="home"></a>
             <div class="desc"><a href="#home"> Home</a></div>
         </div>
         <div class="nav">
-            <img class="icons" src="/profile/img/about.png" alt="about">
+            <a href="#about"> <img class="icons" src="/profile/img/about.png" alt="about"></a>
             <div class="desc"><a href="#about"> About</a></div>
         </div>
         <div class="nav">
-            <img class="icons" src="/profile/img/contact.png" alt="contact">
+            <a href="#contact"> <img class="icons" src="/profile/img/contact.png" alt="contact"></a>
             <div class="desc"><a href="#contact"> Contact</a></div>
         </div>
     </div>
@@ -196,6 +39,7 @@
 
         <div id="home" class="home">
             <h1 class="heading">I'm Oman Badiwal.</h1>
+            
             <p class="heading">Photographer and Web Designer.</p>
             <div class="profile">
                 <img src="/profile/img/home_pic.jpg" alt="profile pic" style="width:100% ; height: 100%;" >
@@ -203,40 +47,42 @@
           
         </div>
         <div id="about">
-            <hr>
-            <h2 class="name ">Oman Badiwal</h2>
-            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <h2 class="name " style="text-align:center;">Oman Badiwal</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p style="padding:2%; text-align: center;" > 
+                Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <h3 class="skills">My Skills</h3>
-            <p class="w3-wide">Photography</p>
+
+            <h3 class="skills" style="text-align:center;">My Skills</h3>
+            <p class="skill" style="text-align:center;">Photography</p>
             
-            <p class="w3-wide">Web Design</p>
+            <p class="skill" style="text-align:center;">Web Design</p>
            
-            <p class="w3-wide">Photoshop</p>
+            <p class="skill" style="text-align:center;">Photoshop</p>
           
             
-            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-              <div class="w3-quarter w3-section">
+            <div class="container">
+              <div class="box">
                 <span class="w3-xlarge">11+</span><br>
                 Partners
               </div>
-              <div class="w3-quarter w3-section">
+              <div class="box">
                 <span class="w3-xlarge">55+</span><br>
                 Projects Done
               </div>
-              <div class="w3-quarter w3-section">
+              <div class="box">
                 <span class="w3-xlarge">89+</span><br>
                 Happy Clients
               </div>
-              <div class="w3-quarter w3-section">
+              <div class="box">
                 <span class="w3-xlarge">150+</span><br>
                 Meetings
               </div>
             </div>
         
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <button class="Download">
               <i class="fa fa-download"></i> Download Resume
             </button>
            
@@ -246,32 +92,27 @@
             <hr style="width:200px" class="w3-opacity">
         
             <div class="w3-section">
-              <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-              <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-              <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+              <p> Chicago, US</p>
+              <p> Phone: +00 151515</p>
+              <p> Email: mail@mail.com</p>
             </div><br>
+
             <p>Let's get in touch. Send me a message:</p>
         
             <form action="/action_page.php" target="_blank">
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+              <p><input  type="text" placeholder="Name" required name="Name"></p>
+              <p><input  type="text" placeholder="Email" required name="Email"></p>
+              <p><input  type="text" placeholder="Subject" required name="Subject"></p>
+              <p><input  type="text" placeholder="Message" required name="Message"></p>
               <p>
-                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                <button type="submit" class="message">
+                  SEND MESSAGE
                 </button>
               </p>
             </form>
         </div>
         <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+            <div>Copyright &copy<b>Oman Badiwal</b></div>
           <!-- End footer -->
           </footer>
     </div>

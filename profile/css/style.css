@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('/profile/img/bg.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: wheat;
+    
+}
+.left{
+    display: inline-block;
+    /* border: 2px solid green; */
+    overflow: scroll;
+    width: 8%;
+    height: 100%;
+    position: absolute;
+    left: 2px;
+    padding: 2px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.dp{
+    display: block;
+    /* overflow: hidden; */
+    /* border: 2px solid rgb(175, 49, 148); */
+    width: 80%;
+    height:fit-content;
+    margin: auto;
+    margin-bottom: 50%;
+}
+.nav{
+    display: block;
+    /* overflow: hidden; */
+    /* border: 2px solid rgb(175, 49, 148); */
+    width: 80%;
+    height:fit-content;
+    margin: auto;
+    margin-bottom: 20%;
+}
+.nav:hover, .nav:active{
+            filter: invert(70%);
+            color:rgba(91, 94, 88, 0.199) ;
+
+            
+}
+
+.dp img{
+    width: 100%;
+
+}
+.material-symbols-rounded{
+        font-size: 70px;
+        text-align: center;
+        margin-left: 13px
+}
+.icons{
+    width: 80%;
+    filter: invert(100%);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+
+}
+.nav a:visited{
+    color:rgba(91, 94, 88, 0.199) ;
+    text-decoration: none;
+    padding: 6px 12px;
+
+}
+.desc {
+    color: aliceblue;
+    text-align: center;
+    font-size: 120%;
+}
+/* .home {
+    display: block;
+    position: relative;
+    border: 2px solid rgb(57, 24, 201);
+    width: 82%;
+    height: 13%;
+    margin: 6px;
+}
+.about{
+    display: block;
+    position: relative;
+    border: 2px solid rgb(131, 175, 49);
+    width: 82%;
+    height: 13%;
+    margin: 6px;
+}
+.contact{
+    display: block;
+    position: relative;
+    border: 2px solid rgb(175, 49, 148);
+    width: 82%;
+    height: 13%;
+    margin: 6px;
+} */
+.main{
+    display: block;
+    float: right;
+    width: 90%;
+    height: 110vh;
+    margin:0px;
+    /* border: 2px solid rgb(27, 55, 78); */
+    color: wheat;
+    overflow: scroll;
+
+}
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* color: rgb(202, 192, 192); */
+   
+}
+#home  {
+    /* background-image: url('/profile/img/home_pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* border: 2px solid rgb(27, 55, 78); */
+    height: fit-content;
+    width: 100%;
+    margin-top: 0px;
+    /* color: beige; */
+
+}
+.profile{
+    /* border: 2px solid rgb(27, 55, 78); */
+    border-radius: 50%;
+    display: block;
+    height: 60%;
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
+#about {
+    /* background-image: url('/profile/img/home_pic.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 2px solid rgb(27, 55, 78); */
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+ 
+}
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 22%;
+    display:block;
+    margin: auto;
+    overflow: hidden;
+
+}
+.box{
+    display: inline-block;
+    float: left;
+    /* border: 2px solid yellow; */
+    width: 22%;
+    text-align: center;
+    align-items: center;
+    padding:2px;
+    /* height: 65%; */
+    margin: 2px 1%;
+    
+}
+.box:hover{
+    background-color: rgba(80, 240, 59, 0.61);
+    color: black;
+}
+.skills:hover{  
+     /*border: 2px solid brown; */
+    background-color: rgba(236, 70, 120, 0.623);
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    height: fit-content;
+
+}
+.skill:hover{
+    /* border: 2px solid brown; */
+    background-color: rgba(212, 74, 24, 0.719);
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 8px;
+    height: fit-content;
+}
+.Download,.message{
+    margin: auto;
+    margin-top: 2%;
+    display: block;
+    padding: 2%;
+}
+
+#contact {
+    /* background-image: url('/profile/img/home_pic.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* border: 2px solid rgb(27, 55, 78); */
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+
+}
+footer{
+    /* border: 2px solid rgb(27, 55, 78); */
+  
+    height: fit-content;
+    width: 90%;
+    text-align: right;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}  
