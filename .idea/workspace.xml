@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893a1008-7b31-41d6-af82-ddb490ac6ee6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/profile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-script/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/java-script/simple.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,3 @@
-/*
 console.time('time taken')
 console.log('hey oman this is java script');
 console.log(34*4);
@@ -143,9 +142,9 @@ console.log (person.changeName(n));
 // for(let x in person){
 //     console.log(person[x])
 // }
-let myobj=JSON.stringify(person); /*funtion will not show in this string
+let myobj=JSON.stringify(person); /*funtion will not show in this string*/
 console.log(myobj)
-       */
+
 // constructor method
 
 function Cars(carName,topSpeed,modelYear){
